@@ -1,34 +1,61 @@
 html {
-    margin: 0;
+  margin: 0;
+}
+
+span {
+  display: block;
+}
+
+.canvas {
+  margin: 100px auto 100px;
+  width: 80%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  border: solid black 2px;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#grey {
+  background: grey;
+}
+
+#white {
+  background: white;
+}
+
+#blue {
+  background: blue;
+}
+
+#yellow {
+  background: yellow;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  span {
-    display: block;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .canvas {
-    margin: 100px auto 100px;
-    width: 80%;
-    text-align: center;
-  }
-  
-  .button {
-    width: 100px;
-    height: 100px;
-    border: solid black 2px;
-    display: inline-block;
-  }
-  
-  #grey {
-    background: grey;
-  }
-  
-  #white {
-    background: white;
-  }
-  #blue {
-    background: blue;
-  }
-  #yellow {
-    background: yellow;
-  }
-  
+}

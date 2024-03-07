@@ -28,6 +28,6 @@ function User(username , loginCount , isLoggedIn){
 const userone = new  User("Hitesh" , 12 ,true);
 const usertwo = new  User("Abhishek", 11 , false);
 
-console.log(userone); // now ouput is ovcerwriiten with the usertwo , which is nbt the good thing
+console.log(userone); // now output is overwriiten with the usertwo , which is nbt the good thing
 //  so just add new before calling the function 
 console.log(usertwo)
